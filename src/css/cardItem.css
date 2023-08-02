@@ -1,0 +1,91 @@
+.slick-initialized {
+    width: 80%;
+    margin:auto;
+  }
+  
+  .AllsBodyCards{
+    margin-bottom: 3%;
+  }
+
+  div.rowbodycard {
+    margin-top:3%
+  }
+  .nav_view {
+    display:flex;
+    width: 89%;
+  }
+  .view_next{
+    background-color:#FF6633;
+    color:white;
+    font-size:15px;
+    padding:8px 10px;
+    font-style: italic;
+    
+  }
+
+  .view_link{
+    margin-left: auto;
+  }
+
+  h1.title_Cate{
+    font-size:17px;
+    background-color: black;
+    color:white;
+    width: 20%;
+    border-radius: 20px;
+    margin-left: 45%;
+    padding:8px;
+    font-style: italic;
+    text-align: center;
+    
+  }
+  
+  .slick-track > div{
+    padding:8px;
+  }
+  .item{
+      padding: 15px;
+      font-size: 13px;
+      
+  }
+  
+  .titleName{
+      font-size: 15px !important;
+      display: -webkit-box; /* Cần vendor prefix cho trình duyệt WebKit */
+      -webkit-line-clamp: 2; /* Số dòng tối đa */
+      -webkit-box-orient: vertical; /* Chiều dọc */
+      overflow: hidden; /* Ẩn phần chữ vượt quá */
+      text-overflow: ellipsis; /* Hiển thị dấu "..." */
+  }
+  
+  .text-ellipsis {
+      display: -webkit-box; /* Cần vendor prefix cho trình duyệt WebKit */
+      -webkit-line-clamp: 2; /* Số dòng tối đa */
+      -webkit-box-orient: vertical; /* Chiều dọc */
+      overflow: hidden; /* Ẩn phần chữ vượt quá */
+      text-overflow: ellipsis; /* Hiển thị dấu "..." */
+    }
+  
+    .slick-prev, .slick-next {
+      background-color: transparent;
+      z-index: 99;
+     
+    }
+    .slick-prev::before, .slick-next::before{
+      color: black !important;
+      font-size: 30px !important;
+    }
+    .slick-prev {
+      left: -35px;
+    }
+    .price {
+      color:red;
+      font-size:15px;
+    } 
+    .AllsBodyCards > div:first-child{
+      margin-top:2% !important;
+    }
+  
+    .Link {
+      text-decoration: none !important;
+    }

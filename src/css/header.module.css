@@ -1,0 +1,46 @@
+ .titleImage {
+   
+    background-color: black;
+    padding: 20px;
+    height: 450px;
+    display:flex;
+    width: 80%;
+    margin: auto; 
+    margin-top: 8% !important;
+    border-radius: 15px;
+ 
+}
+
+.titleImage > div{
+    height: 100%;
+    width: 50%;
+    
+}
+.imgSales{
+    overflow: hidden;
+    border-radius: 10px;
+    
+}
+.imgSales > div{
+    background-color: black;
+    width: 100%; 
+    height: 95%;
+}
+.imgSales > div > img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.twoImg{
+    overflow: hidden;
+}
+.twoImg > div{
+    width: 100%;
+    height: 50%;
+    padding: 5px;
+}
+.twoImg > div >img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+} 

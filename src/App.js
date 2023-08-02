@@ -1,24 +1,30 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import NavBar from './compoments/MainCompoments/NavBar';
+import { CardComponent } from './compoments/MainCompoments/Card';
+import Footer from './compoments/MainCompoments/Footer';
+import Header from './compoments/MainCompoments/Header';
+import userReducer from './Reducers/UserReducer';
+import cookie from "react-cookies";
+import { userContext } from './MyContex';
+import { useReducer } from 'react';
+
 
 function App() {
+
+  const [user, dispatch] = useReducer(userReducer, cookie.load('current-user') || null);
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <userContext.Provider value={[user, dispatch]}>
+        <NavBar />
+        <Header />
+        <CardComponent />
+        <Footer />
+      </userContext.Provider>
+      
+    </>
   );
 }
 

@@ -1,0 +1,32 @@
+
+.nospin {
+    -moz-appearance: textfield; /* Firefox */
+    -webkit-appearance: none; /* Chrome, Safari */
+    appearance: none; /* General */
+    outline: none;
+  }
+  
+  .nospin::-webkit-inner-spin-button,
+  .nospin::-webkit-outer-spin-button {
+    display: none; /* Chrome, Safari */
+  }
+  
+  .nospin::-moz-number-spinners {
+    display: none; /* Firefox */
+  }
+
+  .Link {
+    text-decoration: none;
+  }
+
+  body {
+    max-width: 2000px;
+    min-width: 1000px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+  
+.active>.page-link, .page-link.active{
+  background-color: #ee4d2d !important;
+  border-color:#ee4d2d !important;
+}

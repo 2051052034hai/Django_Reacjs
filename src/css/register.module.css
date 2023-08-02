@@ -1,0 +1,50 @@
+.allRegister{
+    margin-top:5%;
+    background-image: url("/static/anh_bia_login.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 7%;
+  }
+  .allForms{
+      margin:auto;
+      width: 30%;
+      background-color: white;
+      padding:30px;
+      padding-bottom: 5px !important;
+  }
+  
+  .titleName{
+      font-size: 25px;
+      text-align: center;
+      font-style: italic;
+      background-color: black;
+      color:white;
+      padding: 5px;
+      border-radius: 5px
+  }
+  .allForms label{
+      font-weight:500;
+  }
+  .allForms button{
+      background-color:black;
+      border: 1px solid black;
+  }
+  .allForms button:hover{
+      background-color:black;
+      border: 1px solid black;
+      opacity: 0.8;
+  }
+  .Link{
+      color:red;
+      font-weight: 500;
+  }
+  .Link:hover{
+      opacity: 0.6;
+  }
+  .allForms input{
+      box-shadow: none !important;
+      outline: none;
+      border: 1px solid #DDDDDD !important;
+  }
+  
+  

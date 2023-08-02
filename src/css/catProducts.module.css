@@ -1,0 +1,160 @@
+.allCat{
+    margin-top:7% !important;
+    width: 90%;
+    margin:auto;
+    display: flex;
+}
+.catLeft{
+    width: 25%;
+    background-color:WhiteSmoke;
+    padding: 2%;
+}
+.catLeft > h1:first-child{
+    width: 60%;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    font-size: 20px;
+    border-bottom: 1px solid #BBBBBB;
+}
+.catLeft > h1{
+    font-size: 15px;
+    font-weight: bold;
+}
+.hSecond{
+    margin-bottom:5px;
+}
+.catLeft > h3{
+    color:#d40c0c;
+    font-size:19px;
+    margin-bottom:20px;
+}
+.Insales{
+    padding: 10px;
+}
+.Insales label{
+    padding-top: 5px;
+}
+.Insales > h3{
+    font-size:18px;
+    margin-top:5px;
+}
+
+.fiveStart svg{
+    color: rgb(255, 167, 39);
+    margin-right: 2%;
+}
+
+.active{
+    color: DimGray !important;
+}
+/* Tùy chỉnh vị trí tick (chọn) của checkbox */
+
+.Insales ul {
+    list-style-type: none;
+    padding: 0;
+}
+.twoPrice {
+    display: flex;
+}
+.twoPrice > input {
+    width: 50%;
+    align-items: center;
+    font-size: 10px;
+    padding: 3px;
+    outline: none;
+}
+
+.line{
+    width: 15%;
+    margin-top:8% !important;
+    margin: 5%;
+    height: 1%;
+}
+.button > button {
+    background-color: #ee4d2d;
+    color:white;
+    border: 1px solid #ee4d2d;
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.5;
+}
+.button > button:hover{
+    opacity: 0.8;
+}
+.carRight{
+    width: 80%;
+}
+.navRight{
+    padding: 15px;
+    display: flex;
+    width: 100%;
+    background: rgba(0,0,0,.03);
+}
+.navRight > div {
+    margin-left: 2%;
+    background-color: white;
+    padding: 5px;
+    transition: 0.2s;
+}
+.hover:hover{
+    background-color:#ee4d2d;
+    color: white;
+}
+.navRight > h5{
+    font-size:18px;
+    padding: 5px;
+}
+ .choosePrice {
+    width: 20%;
+    padding-left: 10px !important; 
+    position: relative;
+    align-items: center;
+}
+
+ .choosePrice > span:nth-child(2) {
+    margin-left:70%;
+   
+}  
+
+.catProduct {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content:space-between; */
+}
+.catProduct > div {
+    width: 19%;
+    padding: 0.5%;
+    margin: 0.5%;
+}
+
+.catProduct > div img{
+    width: 100%;
+}
+
+.paginator{
+ width: 14%;
+ overflow: hidden;
+ padding: 0;
+ 
+}
+.navRight .paginator{
+    margin-left: auto;
+    background-color: transparent;
+}
+.paginator > span {
+    padding:10px;
+     background-color:white;
+     margin-left: 2%;
+}
+.spanWhite {
+    background-color:transparent !important;
+}
+.allPaginator > ul {
+    margin:auto;
+    width: 30%;
+}
+.allPaginator > ul > li a{
+    color: black ;
+}
