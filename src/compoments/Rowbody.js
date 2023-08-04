@@ -6,7 +6,6 @@ import CardItem from '../compoments/CartItem'
 import SliderSetting from '../globalSettings/sliderSetting'
 import {Link} from 'react-router-dom'
 
-
 function RowBodyCard({newProduct, category_name, category_id}) {
     
     const[newSetting, setNewSettings] = useState({})
@@ -38,11 +37,16 @@ function RowBodyCard({newProduct, category_name, category_id}) {
                   
                     <Slider {...newSetting}>
                     
-                            { newProduct.map(p => {
-                            p.unitPrice = p.unitPrice.replace(/\B(?=(\d{3})+(?!\d))/g, ".").slice(0, -3);
-        
-                            return  <Link className="Link" to ={`/product/${p.id}`} key ={p.id}><CardItem item = {p}/></Link> 
-                        })}
+                            { newProduct.map((p,index) => 
+
+                           
+
+                            index < 8 ? (
+                                <React.Fragment key={p.id}>
+                                        <Link className="Link" to ={`/product/${p.id}`}><CardItem item = {p}/></Link> 
+                                </React.Fragment>
+                            ):null  
+                        )}
                     </Slider>
                     </div>
                 </>

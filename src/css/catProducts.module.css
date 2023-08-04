@@ -108,12 +108,12 @@
 }
  .choosePrice {
     width: 20%;
-    padding-left: 10px !important; 
     position: relative;
     align-items: center;
+    padding: 0px !important;
 }
 
- .choosePrice > span:nth-child(2) {
+ .choosePrice > div > span:nth-child(2) {
     margin-left:70%;
    
 }  
@@ -121,7 +121,6 @@
 .catProduct {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content:space-between; */
 }
 .catProduct > div {
     width: 19%;
@@ -157,4 +156,60 @@
 }
 .allPaginator > ul > li a{
     color: black ;
+}
+.bodyStar {
+    display: flex;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.bodyStar > p {
+   
+    display: block;
+    font-size:13px;
+}
+.startActive {
+    color: rgb(255, 167, 39) ;
+    margin-right: 5%;
+}
+.unitPrice {
+    color:red;
+    font-size:16px;
+    margin-bottom:7px;
+}
+.enjoy {
+    background-color:#ee4d2d;
+    color: white;
+    font-size:500;
+    position: absolute;
+    font-size: 12px;
+    padding: 2px 10px;
+    top: 5px;
+    left: 5px;
+}
+
+.showUl {
+    position: absolute;
+    z-index: 99;
+    list-style-type: none;
+    left: 0;
+    bottom: -172%;
+    background-color: white;
+    margin-bottom: 0;
+    width: 100%;
+    padding-left: 7px;
+    transition: 0.1s;
+    
+}
+.spanAll {
+    padding: 8px;
+    z-index: 99;
+}
+.showUl > li {
+    padding: 5px;
+   
+}
+
+.showUl > li:hover {
+    color: #ee4d2d;
 }

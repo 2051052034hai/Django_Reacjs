@@ -6,10 +6,13 @@ export const endpoint = {
     'categories': '/categories/',
     'products': '/products/',
     'getProduct': (productId) => `/products/${productId}/get/`,
+    'getCategory': (productId) => `/categories/${productId}/get/`,
     'register': "/users/", 
     'login': '/o/token/',
     'current-user': '/users/current-user/',
     'bill': "/bills/",
+    'getProductsCat': (productId) => `/categories/${productId}/products/`
+
 }
 
 export default axios.create({

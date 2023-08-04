@@ -26,6 +26,7 @@ export const CardComponent = () => {
       return location.pathname.includes(path)
     })
 
+
   if (checkPath) { 
 
     switch(typePath){
@@ -38,6 +39,7 @@ export const CardComponent = () => {
           ); // Ẩn component nếu nằm trên đường định tuyến được chỉ định
       case '/categories/':
             let cat_id = location.pathname.split(`${typePath}`)[1];
+           
             return(
               <Routes>
               <Route path ={`${typePath}${cat_id}`} element = {<CatProducts />}/>
@@ -81,6 +83,7 @@ export const CardComponent = () => {
       <div className="AllsBodyCards">
        <FetcherApi onCategoriesLoaded = {handleProductLoaded} typefetcher = "products"/>
        <FetcherApi onCategoriesLoaded = {handleCategoryLoaded} typefetcher = "categories"/>
+
         {Array.isArray(products) && products.length > 0 && (
           
           Categories.map(c => {

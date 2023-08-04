@@ -7,7 +7,7 @@ function FetcherApi({ onCategoriesLoaded, typefetcher, productId }) {
       try {
         let res;
         if (productId) {
-            const url = endpoint.getProduct(productId)
+            const url = endpoint[typefetcher](productId)
             res = await API.get(url)
         } else
         {
